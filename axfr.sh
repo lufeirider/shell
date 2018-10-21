@@ -1,4 +1,6 @@
 #!/bin/bash
+#nslookup -type=ns test.com
+#dig @dns1.test.com axfr test.com
 #usage:axfr.sh baidu.com
 domain=$1
 nsserver=`dig +short ns $domain`
